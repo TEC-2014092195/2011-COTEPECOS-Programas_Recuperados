@@ -1,0 +1,934 @@
+Programa_1
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_1;
+uses crt,dos;
+var
+        salir:string;
+        letra:char;
+        ta,tb,tc,td,te,tf,tg,th:integer;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 1');
+        writeln('Descripci¢n: Valores "div" "mod" ');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(white);
+        repeat
+        begin
+        writeln;
+        writeln('Para los casos de "div" digite la letra "d"');
+        writeln('Para los casos de "mod" digite la letra "m"');
+        writeln('');
+        writeln('');
+        textcolor(11);
+        write('Cual caso desea: ');
+        readln(letra);
+        writeln;
+        case letra of
+        'd','D': begin ta:= 15 div 12; tb:= 24 div 12; tc:= 123 div 100; td:= 200 div 100; writeln('15 div 12 = ',ta); writeln('24 div 12 = ',tb); writeln('123 div 100 = ',tc); writeln('200 div 100 = ',td); end;
+        'm','M': begin te:= 15 mod 12; tf:= 24 mod 12; tg:= 123 mod 100; th:= 200 mod 100; writeln('15 mod 12 = ',te); writeln('24 mod 12 = ',tf); writeln('123 mod 100 = ',tg); writeln('200 mod 100 = ',th); end;
+        else writeln('Letra invalida');
+        end;
+        writeln;
+        write('Digite "si" para salir: ');
+        readln(salir);
+        end;
+        until salir='si';
+end.
+
+
+Programa_2
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_2;
+uses crt,dos;
+var
+        ta,tb,tc,tf,tg,th:integer;
+        te:real;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 2 ');
+        writeln('Descripci¢n: muestra el total de diferentes expresiones');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(white);
+        writeln('El valor de las expresiones es: ');
+        writeln('');
+        ta:= 15 * 14 - 3 * 7; tb:= -4 * 5 * 2; tc:= (24+2*6) div 4; te:= 3+4*(8*(4-(9+3)/6)); tf:= 4*3*5+8*4*2-5; tg:= 4-40 div 5; th:= (-5) mod (-2);
+        writeln('a) 15*14-3*7=   ',ta);writeln(''); writeln('b) -4*5*2=   ',tb); writeln(''); writeln('c) (24+2*6)div4=   ',tc); writeln(''); writeln('d) a div a div a * b=   1 div entre resultado de a * b');
+        writeln; writeln('e) 3+4*(8*(4-(9+3)/6))=   ',te:0:2); writeln(''); writeln('f) 4*3*5+8*4*2-5=   ',tf); writeln; writeln('g) 4-40 div 5=   ',tg); writeln(''); writeln('h) (-5) mod (-2)=   ',th);
+        readln;
+end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programa_5
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_5;
+uses crt,dos;
+var
+        salir:string;
+        total,a:integer;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 5 ');
+        writeln('Descripci¢n: Lee un entero y lo multiplica por 2 y muestra el resultado');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln;
+        writeln;
+        textcolor(10);
+        repeat
+        begin
+        writeln;
+        write('Digite un numero entero: ');
+        readln(a);
+        total:=a*2;
+        begin textcolor(11); writeln; writeln('El resultado es: ',total); end;
+        end;
+        writeln;
+        write('Digite "si" para salir: ');
+        readln(salir);
+        until salir='si';
+end.
+
+
+Programa_6
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_6;
+uses crt,dos;
+var
+        a,b:integer;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 6 ');
+        writeln('Descripci¢n: Escribir sentencias que cambien el valor de dos variables');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(7);
+        write('Digite su primera variable (entero): ');
+        readln(a);
+        write('Digite su segunda variable (entero): ');
+        readln(b);
+        textcolor(10);
+        writeln;
+        a:=b+a;
+        writeln('El valor de su primer variable es: ',a);
+        b:=a+b;
+        writeln;
+        writeln('El valor de su segunda variable es: ',b);
+        readln;
+end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programa_7
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_7;
+uses crt,dos;
+var
+        salir:string;
+        total,long,anch:real;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 7');
+        writeln('Descripci¢n: Calcula la superficie de una habitacion');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(7);
+        repeat
+        begin
+        write('Digite la Longitud (en mts) de la habitaci¢n: ');
+        readln(long);
+        writeln();
+        write('Digite la Anchura (en mts) de la habitaci¢n: ');
+        readln(anch);
+        writeln();
+        total:= long * anch;
+        writeln('La superficie de la habitaci¢n es: ',total:0:4,' metros cuadrados');
+        writeln();
+        write('Digite "si" para salir: ');
+        readln(salir);
+        end;
+        until salir = 'si';
+end.
+
+
+
+
+
+Programa_9
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_9;
+uses crt,dos;
+var
+        nombre:string;
+        edad:integer;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 9 ');
+        writeln('Descripci¢n: muestra la diferencia entre "write" y "writeln"');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(7);
+        write('Escribe tu nombre: ');
+        readln(nombre);
+        write('                   ^^^^');
+        writeln('');
+        writeln('Viste ',nombre,' donde lo escribiste, sobre la linea eso es "write"');
+        writeln('');
+        textcolor(14);
+        writeln('Ahora para "writeln" digita tu edad:');
+        write('-->> ');
+        readln(edad);
+        writeln('Viste la digitaste en la siguiente linea para eso es "writeln"');
+        textcolor(10);
+        writeln('');
+        writeln('Esa es la diferencia que el programa "sobre" o en la siguiente linea');
+        readln;
+end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programa_10
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_10;
+uses crt,dos;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 10');
+        writeln('Descripci¢n: Un programa que visualice diferentes valores');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(11);
+        writeln('7.1');
+        writeln('7.12');
+        writeln('7.123');
+        writeln('7.1234');
+        writeln('7.12345');
+        readln;
+end.
+
+
+
+
+
+
+Programa_11
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_11;
+uses crt,dos;
+var
+        num1,num2,num3,a,b,c:integer;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 11 ');
+        writeln('Descripci¢n: Que el usuario digite tres numeros y los almacene en 3 variables');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(11);
+        writeln('Digite el primer numero entero: ');
+        readln(num1);
+        writeln('Digite el segundo numero entero: ');
+        readln(num2);
+        writeln('Digite el tercer numero entero: ');
+        readln(num3);
+        a:=num1;
+        b:=num2;
+        c:=num3;
+        textcolor(7);
+        writeln('Sus numeros son: Primero)  ',a,'  Segundo)  ',b,'  Tercero)  ',c);
+        readln;
+end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programa_12
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_12;
+uses crt,dos;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 12 ');
+        writeln('Descripci¢n: Dibuja un triangulo');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(10);
+        gotoxy(20,8);
+        writeln('           *');
+        gotoxy(20,9);
+        writeln('          * *');
+        gotoxy(20,10);
+        writeln('         *   *');
+        gotoxy(20,11);
+        writeln('        *     *');
+        gotoxy(20,12);
+        writeln('       *       *');
+        gotoxy(20,13);
+        writeln('      *         *');
+        gotoxy(20,14);
+        writeln('     *           *');
+        gotoxy(20,15);
+        writeln('    *             *');
+        gotoxy(20,16);
+        writeln('   *               *');
+        gotoxy(20,17);
+        writeln('  *                 *');
+        gotoxy(20,18);
+        writeln(' *                   *');
+        gotoxy(20,19);
+        writeln('***********************');
+        readln;
+end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programa_13
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_13;
+uses crt,dos;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 13 ');
+        writeln('Descripci¢n: Dibuja un reactangulo');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(10);
+        gotoxy(18,8);
+        writeln('*************************************************');
+        gotoxy(18,9);
+        writeln('*                                               *');
+        gotoxy(18,10);
+        writeln('*                                               *');
+        gotoxy(18,11);
+        writeln('*                                               *');
+        gotoxy(18,12);
+        writeln('*                                               *');
+        gotoxy(18,13);
+        writeln('*                                               *');
+        gotoxy(18,14);
+        writeln('*                                               *');
+        gotoxy(18,15);
+        writeln('*                                               *');
+        gotoxy(18,16);
+        writeln('*                                               *');
+        gotoxy(18,17);
+        writeln('*                                               *');
+        gotoxy(18,18);
+        writeln('*                                               *');
+        gotoxy(18,19);
+        writeln('*************************************************');
+        readln;
+end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programa_14
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_14;
+uses crt,dos;
+var
+        nombre:string;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 14 ');
+        writeln('Descripci¢n: Dibuja un rectangulo y en el centro se muestra tu nombre');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(7);
+        write('Digite su nombre: ');
+        readln(nombre);
+        textcolor(10);
+        gotoxy(18,13);
+        writeln('*************************************************');
+        gotoxy(18,14);
+        writeln('*                                               *');
+        gotoxy(18,15);
+        writeln('*                                               *');
+        gotoxy(18,16);
+        writeln('*                                               *');
+        gotoxy(18,17);
+        writeln('*                                               *');
+        gotoxy(18,18);
+        writeln('*                                               *');
+        gotoxy(18,19);
+        begin writeln('*'); gotoxy(39,19); writeln(nombre); gotoxy(66,19); writeln('*');  end;
+        gotoxy(18,20);
+        writeln('*                                               *');
+        gotoxy(18,21);
+        writeln('*                                               *');
+        gotoxy(18,22);
+        writeln('*                                               *');
+        gotoxy(18,23);
+        writeln('*                                               *');
+        gotoxy(18,24);
+        writeln('*************************************************');
+        readln;
+end.
+Programa_15
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_15;
+uses crt,dos;
+var
+        nombre:string;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 15 ');
+        writeln('Descripci¢n: Te pregunta tu nombre y te saluda');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(7);
+        writeln('¨Cu l es tu nombre?');
+        readln(nombre);
+        clrscr;
+        textcolor(7);
+        textbackground(5);
+        writeln('_|                  _|',nombre:20,' !       ! ',nombre,' ­­­­­­­­­');
+        writeln('_|_|_|      _|_|    _|    _|_|_|',nombre:10,' !!     !! ',nombre,' ­­­­ ­­­­');
+        writeln('_|    _|  _|    _|  _|  _|    _|',nombre:10,' !!!   !!! ',nombre,' ­­­   ­­­');
+        writeln('_|    _|  _|    _|  _|  _|    _|',nombre:10,' !!!! !!!! ',nombre,' ­­     ­­');
+        writeln('_|    _|    _|_|    _|    _|_|_|',nombre:10,' !!!!!!!!! ',nombre,' ­       ­');
+        readln;
+end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programa_16
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_16;
+uses crt,dos;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 16 ');
+        writeln('Descripci¢n: Muestra los 15 colores que utiliza el textcolor del 0 al 14');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        gotoxy(14,9);
+	textbackground(7);
+        textcolor(0);
+        writeln('          textcolor(0)   NEGRO               ');
+        gotoxy(14,10);
+        textcolor(1);
+        writeln('          textcolor(1)   AZUL OBSCURO        ');
+        gotoxy(14,11);
+        textcolor(2);
+        writeln('          textcolor(2)   VERDE               ');
+        gotoxy(14,12);
+        textcolor(3);
+        writeln('          textcolor(3)   VERDE AGUA          ');
+        gotoxy(14,13);
+        textcolor(4);
+        writeln('          textcolor(4)   ROJO                ');
+        gotoxy(14,14);
+        textcolor(5);
+        writeln('          textcolor(5)   MORADO              ');
+        gotoxy(14,15);
+        textcolor(6);
+        writeln('          textcolor(6)   DORADO              ');
+        gotoxy(14,16);
+        textbackground(5);
+        textcolor(7);
+        writeln('          textcolor(7)   BLANCO              ');
+        gotoxy(14,17);
+        textcolor(8);
+        writeln('          textcolor(8)   GRIS                ');
+        gotoxy(14,18);
+        textcolor(9);
+        writeln('          textcolor(9)   AZUL                ');
+        gotoxy(14,19);
+        textcolor(10);
+        writeln('          textcolor(10)  VERDE CLARO         ');
+        gotoxy(14,20);
+        textcolor(11);
+        writeln('          textcolor(11)  CELESTE             ');
+        gotoxy(14,21);
+        textcolor(12);
+        writeln('          textcolor(12)  ROJO                ');
+        gotoxy(14,22);
+        textcolor(13);
+        writeln('          textcolor(13)  FUCSIA              ');
+        gotoxy(14,23);
+        textcolor(14);
+        writeln('          textcolor(14)  AMARILLO            ');
+        readln;
+end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programa_17
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_17;
+uses crt,dos;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 17');
+        writeln('Descripci¢n: Te dice una frase con un fondo rojo y el texto blanco');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textbackground(12);
+        textcolor(7);
+        gotoxy(14,9);
+        writeln('"Solidaridad arte de compartir unos con otros"');
+        readln;
+end.
+
+
+
+
+
+Programa_18
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_18;
+uses crt,dos;
+var
+        num1,total:real;
+        letra:char;
+        salir:string;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 18 ');
+        writeln('Descripci¢n: Aplica funciones "Sqr","Sqrt","trunc","Int" ');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        repeat
+        begin
+        writeln;
+        textcolor(10);
+        writeln('LETRAS:  a. para "SQR"  b. para "SQRT"  c. para "TRUNC"  d. para "INT"');
+        writeln('');
+        textcolor(14);
+        write('Digita la letra correspondiente dependiendo del caso que desees: ');
+        readln(letra);
+        textcolor(7);
+        writeln('');
+        case letra of
+        'a': begin writeln('Digite el numero al que desea calcularle el cuadrado: '); readln(num1); total:= Sqr(num1); writeln; writeln('El cuadrado de ',num1:0:3,' es: ',total:0:3); end;
+        'b': begin writeln('Digite el numero al que desea calcularle la raiz: '); readln(num1); total:= Sqrt(num1); writeln; writeln('La raiz de ',num1:0:3,' es: ',total:0:3); end;
+        'c': begin writeln('Digite un numero con decimales: '); readln(num1); total:= Trunc(num1); writeln; writeln('El resultado de la funcion Trunc es: ',total:0:3); end;
+        'd': begin writeln('Digite un numero con decimales: '); readln(num1); total:= Int(num1); writeln; writeln('El resultado de la funcion Int es: ',total:0:3); end;
+        end;
+        writeln('');
+        write('Digite "si" para salir: ');
+        readln(salir);
+        end
+        until salir = 'si';
+end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programa_19
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_19;
+uses crt,dos;
+var
+        nombre:string;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 19');
+        writeln('Descripci¢n: Utilizar gotoxy');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(10);
+        write('Escribe tu nombre: ');
+        readln(nombre);
+        writeln('');
+        textcolor(14);
+        writeln(nombre,' con gotoxy se elige la posicion en que desees que escriba el programa');
+        gotoxy(25,15);
+        textcolor(11);
+        writeln('por ejemplo hacia el centro');
+        gotoxy(26,16);
+	writeln('        . --- .');
+        gotoxy(26,17);
+        writeln('      /        \');
+        gotoxy(26,18);
+	writeln('     |  O  _  O |');
+        gotoxy(26,19);
+        writeln('     |  ./   \. |');
+        gotoxy(26,20);
+	writeln('     /  `-._.-''  \');
+        gotoxy(26,21);
+        writeln('   .'' /         \ `.');
+        gotoxy(26,22);
+	writeln('.-~.-~/           \~-.~-.');
+        gotoxy(26,23);
+        writeln('       HOLA ',nombre);
+        readln;
+        end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

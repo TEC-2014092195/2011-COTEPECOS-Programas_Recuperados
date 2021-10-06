@@ -1,0 +1,41 @@
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_13;
+uses crt,dos;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 13 ');
+        writeln('Descripci¢n: Dibuja un reactangulo');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(10);
+        gotoxy(18,8);
+        writeln('*************************************************');
+        gotoxy(18,9);
+        writeln('*                                               *');
+        gotoxy(18,10);
+        writeln('*                                               *');
+        gotoxy(18,11);
+        writeln('*                                               *');
+        gotoxy(18,12);
+        writeln('*                                               *');
+        gotoxy(18,13);
+        writeln('*                                               *');
+        gotoxy(18,14);
+        writeln('*                                               *');
+        gotoxy(18,15);
+        writeln('*                                               *');
+        gotoxy(18,16);
+        writeln('*                                               *');
+        gotoxy(18,17);
+        writeln('*                                               *');
+        gotoxy(18,18);
+        writeln('*                                               *');
+        gotoxy(18,19);
+        writeln('*************************************************');
+        readln;
+end.

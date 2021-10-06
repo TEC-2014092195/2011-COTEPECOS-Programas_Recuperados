@@ -1,0 +1,41 @@
+{Derechos Reservados Kevin Hernandez/10-5/COTEPECOS/2011}
+program Proyecto_1_12;
+uses crt,dos;
+begin
+        clrscr;
+        textcolor(green);
+        writeln('*****************************************************************************');
+        writeln('Programa Nø: 12 ');
+        writeln('Descripci¢n: Dibuja un triangulo');
+        writeln('Elaborado por: Kevin Hernandez Rostran');
+        writeln('Fecha: 28/6/2011');
+        writeln('*****************************************************************************');
+        writeln('');
+        writeln('');
+        textcolor(10);
+        gotoxy(20,8);
+        writeln('           *');
+        gotoxy(20,9);
+        writeln('          * *');
+        gotoxy(20,10);
+        writeln('         *   *');
+        gotoxy(20,11);
+        writeln('        *     *');
+        gotoxy(20,12);
+        writeln('       *       *');
+        gotoxy(20,13);
+        writeln('      *         *');
+        gotoxy(20,14);
+        writeln('     *           *');
+        gotoxy(20,15);
+        writeln('    *             *');
+        gotoxy(20,16);
+        writeln('   *               *');
+        gotoxy(20,17);
+        writeln('  *                 *');
+        gotoxy(20,18);
+        writeln(' *                   *');
+        gotoxy(20,19);
+        writeln('***********************');
+        readln;
+end.
